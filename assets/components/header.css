@@ -77,3 +77,9 @@
   font-weight: 400;
   letter-spacing: 0em;
 }
+
+@media screen and (max-width: 742px) {
+  .header .header-container .header-medium .header-nav .nav-list {
+    display: none;
+  }
+}

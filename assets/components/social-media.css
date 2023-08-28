@@ -20,6 +20,7 @@
   margin-top: 3px;
   display: flex;
   column-gap: 36px;
+  flex-wrap: wrap;
 }
 
 .social-media .social-media-container img {
