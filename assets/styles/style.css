@@ -3,11 +3,14 @@
 @import url("../components/footer.css");
 @import url("../components/social-media.css");
 @import url("../components/button.css");
-body {
-  height: 120vh;
-}
+@import url("../components/delivery.css");
+@import url("../fonts/index.css");
 .shadow {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1222222;
 }
 
 /* //home */
@@ -38,4 +41,91 @@ main .home .home-container .home-left p {
   width: 370px;
   color: #241400;
   margin-bottom: 15px;
+}
+
+/* //catalog */
+main .catalog {
+  margin-bottom: 100px;
+}
+main .catalog .catalog-container {
+  width: 54%;
+  margin: 0 auto;
+}
+main .catalog .catalog-container h2 {
+  font-family: Montserrat;
+  font-size: 22px;
+  font-weight: 900;
+  line-height: 49px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-align: center;
+}
+main .catalog .catalog-container .catalog-items {
+  margin-top: 27px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+main .catalog .catalog-container .catalog-items .catalog-item {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0em;
+  color: #241400;
+  background: #ffffff;
+  box-shadow: 0px 4px 11px 0px #00000040;
+  width: 182px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+/* //about */
+
+main .about .about-container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+main .about .about-container h2 {
+  font-family: Montserrat;
+  font-size: 22px;
+  font-weight: 900;
+  line-height: 49px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #241400;
+}
+
+main .about .about-container .statistics {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+main .about .about-container .statistics .statistic {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+main .about .about-container .statistics .statistic span {
+  font-family: Montserrat;
+  font-size: 35px;
+  font-weight: 900;
+  line-height: 98px;
+  letter-spacing: 0em;
+  color: #241400;
+}
+
+main .about .about-container .statistics .statistic p {
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  color: #241400;
 }

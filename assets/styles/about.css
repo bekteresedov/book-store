@@ -1,0 +1,41 @@
+@import url("../styles/reset.css");
+@import url("../components/header.css");
+@import url("../components/footer.css");
+@import url("../components/social-media.css");
+@import url("../fonts/index.css");
+
+/* //about */
+main .about {
+  margin-bottom: 60px;
+}
+main .about .about-container {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 80px;
+}
+main .about .about-container .about-left h2 {
+  font-family: Montserrat;
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 71px;
+  letter-spacing: 0em;
+  color: #241400;
+}
+
+main .about .about-container .about-left p {
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #241400;
+}
+
+main .about .about-container .about-right img {
+  height: 220px;
+  margin-top: 110px;
+}

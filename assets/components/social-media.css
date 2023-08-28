@@ -1,14 +1,13 @@
 @import url("../fonts/index.css");
-main .social-media {
+.social-media {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   height: 280px;
-  border-top: 2px solid black;
 }
 
-main .social-media h2 {
+.social-media h2 {
   font-family: Montserrat;
   font-size: 18px;
   font-weight: 900;
@@ -17,13 +16,13 @@ main .social-media h2 {
   color: #241400;
 }
 
-main .social-media .social-media-container {
+.social-media .social-media-container {
   margin-top: 3px;
   display: flex;
   column-gap: 36px;
 }
 
-main .social-media .social-media-container img {
+.social-media .social-media-container img {
   width: 55px;
   height: 55px;
 }
