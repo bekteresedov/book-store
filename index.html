@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <link rel="stylesheet" href="../assets/styles/style.css" />
+    <script defer src="./assets/js/hamburgerMenu.js"></script>
+    <script defer src="./assets/js/join.js"></script>
+    <script defer src="./assets/js/index.js"></script>
   </head>
   <body>
     <header class="header shadow">
@@ -49,7 +52,26 @@
         <div class="header-right">
           <img class="header-icon" src="./assets/icon/join.svg" alt="join" />
           <h4 class="header-join">Join</h4>
+          <img
+            src="./assets/icon/hambugerMenu.svg"
+            alt="hambugerMenu"
+            class="hamburger"
+          />
         </div>
+      </div>
+      <!-- //absolute -->
+      <div class="absolute">
+        <img src="./assets/icon/cancel.svg" alt="cancel" class="cancel" />
+      </div>
+      <!-- //join -->
+      <div class="join">
+        <img class="canc" src="./assets/icon/canc.png" alt="cancel" />
+        <h2>Join Us</h2>
+        <form>
+          <input type="text" placeholder="Full name" class="input" />
+          <input type="email" placeholder="Email" class="input" />
+          <button class="joinBtn">Join</button>
+        </form>
       </div>
     </header>
     <main>
@@ -62,7 +84,7 @@
               In our store you can find a book for every taste. A large
               assortment. Nice prices. Interesting stories.
             </p>
-            <button class="button">Go to catalog</button>
+            <button class="button" id="catalog">Go to catalog</button>
           </div>
           <div class="home-right">
             <img src="../assets/images/home-book.svg" alt="home-book" />
