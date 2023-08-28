@@ -1,0 +1,21 @@
+.button {
+  width: 172px;
+  padding-left: 17px;
+  height: 45px;
+  background: #e16a00;
+  border: 0;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  transition: 1.5s ease-in-out;
+  background: #804511;
+}

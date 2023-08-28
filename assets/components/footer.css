@@ -1,0 +1,58 @@
+@import url("../fonts/index.css");
+.footer {
+  background: #391f00;
+}
+
+.footer .footer-container {
+  width: 80%;
+  margin: 0 auto;
+  height: 176px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* <!-- //footer-left --> */
+
+.footer .footer-container .footer-left .footer-logo {
+  color: #ffffff96;
+  width: 286.5714416503906px;
+  height: 43px;
+  border: 1px;
+}
+
+/* //footer-right */
+.footer .footer-container .footer-right .list-container {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 80px;
+}
+.footer .footer-container .footer-right .list-container div h3,
+.footer .footer-container .footer-right .list-container div ul li {
+  font-family: Montserrat;
+  font-size: 16.2px;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: left;
+  font-family: Montserrat;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff;
+}
+.footer .footer-container .footer-right .list-container div ul li {
+  font-size: 11.6px;
+  font-weight: 300;
+}
+/* footer end */
+.footer .footer-end {
+  font-family: Montserrat;
+  font-size: 10px;
+  font-weight: 300;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #ffffff;
+  padding: 10px;
+}
