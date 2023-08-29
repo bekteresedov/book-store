@@ -180,3 +180,14 @@ main .about .about-container .statistics .statistic p {
     flex-direction: column;
   }
 }
+
+.dark {
+  width: 100%;
+  height: 100vh;
+  background-color: #000000dd;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 9999999990009999999999;
+}

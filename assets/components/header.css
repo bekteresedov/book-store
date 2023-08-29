@@ -116,6 +116,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   display: none;
+  z-index: 99999999900099999999999;
 }
 
 .join h2 {
