@@ -6,7 +6,7 @@
     <title>Home</title>
     <link rel="stylesheet" href="../assets/styles/style.css" />
     <script defer src="./assets/js/hamburgerMenu.js"></script>
-    <script defer src="./assets/js/join.js"></script>
+    <script defer type="module" src="./assets/js/join.js"></script>
     <script defer type="module" src="./assets/js/index.js"></script>
   </head>
   <body>
@@ -69,8 +69,16 @@
           <img class="canc" src="./assets/icon/canc.png" alt="cancel" />
           <h2>Join Us</h2>
           <form>
-            <input type="text" placeholder="Full name" class="input" />
-            <input type="email" placeholder="Email" class="input" />
+            <input
+              id="fName"
+              type="text"
+              placeholder="Full name"
+              class="input"
+            />
+            <p id="fName-error"></p>
+            <input id="emaiL" type="email" placeholder="Email" class="input" />
+            <p id="emaiL-error"></p>
+
             <button class="joinBtn">Join</button>
           </form>
         </div>

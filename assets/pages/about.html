@@ -6,7 +6,7 @@
     <title>About</title>
     <link rel="stylesheet" href="../styles/about.css" />
     <script defer src="../js/hamburgerMenu.js"></script>
-    <script defer src="../js/join.js"></script>
+    <script defer type="module" src="../js/join.js"></script>
   </head>
   <body>
     <header class="header">
@@ -62,8 +62,16 @@
           <img class="canc" src="../icon/canc.png" alt="cancel" />
           <h2>Join Us</h2>
           <form>
-            <input type="text" placeholder="Full name" class="input" />
-            <input type="email" placeholder="Email" class="input" />
+            <input
+              id="fName"
+              type="text"
+              placeholder="Full name"
+              class="input"
+            />
+            <p id="fName-error"></p>
+            <input id="emaiL" type="email" placeholder="Email" class="input" />
+            <p id="emaiL-error"></p>
+
             <button class="joinBtn">Join</button>
           </form>
         </div>

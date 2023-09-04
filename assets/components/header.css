@@ -134,6 +134,13 @@
   flex-direction: column;
   row-gap: 17px;
 }
+.join form #fName-error,
+.join form #emaiL-error {
+  margin-top: -13px;
+  color: red;
+  font-size: 13px;
+  font-weight: 400;
+}
 .joinBtn {
   height: 45px;
   background: #e16a00;
