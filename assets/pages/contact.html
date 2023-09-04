@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../styles/contact.css" />
     <script defer src="../js/hamburgerMenu.js"></script>
     <script defer src="../js/join.js"></script>
+    <script defer type="module" src="../js/contact.js"></script>
   </head>
   <body>
     <header class="header">
@@ -57,14 +58,16 @@
         <img src="../icon/cancel.svg" alt="cancel" class="cancel" />
       </div>
       <!-- //join -->
-      <div class="join">
-        <img class="canc" src="../icon/canc.png" alt="cancel" />
-        <h2>Join Us</h2>
-        <form>
-          <input type="text" placeholder="Full name" class="input" />
-          <input type="email" placeholder="Email" class="input" />
-          <button class="joinBtn">Join</button>
-        </form>
+      <div class="dark">
+        <div class="join">
+          <img class="canc" src="../icon/canc.png" alt="cancel" />
+          <h2>Join Us</h2>
+          <form>
+            <input type="text" placeholder="Full name" class="input" />
+            <input type="email" placeholder="Email" class="input" />
+            <button class="joinBtn">Join</button>
+          </form>
+        </div>
       </div>
     </header>
     <main>
@@ -74,18 +77,33 @@
           <h2>Contact Us</h2>
           <form>
             <div class="row">
-              <input type="text" placeholder="Full Name" />
-              <input type="email" placeholder="Email" />
+              <div class="row-container">
+                <input id="f-name" type="text" placeholder="Full Name" />
+                <p id="f-name-error"></p>
+              </div>
+              <div class="row-container">
+                <input id="email" type="email" placeholder="Email" />
+                <p id="email-error"></p>
+              </div>
             </div>
             <div class="row">
-              <input type="text" placeholder="Address" />
-              <input type="email" placeholder="Phone" />
+              <div class="row-container">
+                <input id="address" type="text" placeholder="Address" />
+                <p id="address-error"></p>
+              </div>
+              <div class="row-container">
+                <input id="phone" type="number" placeholder="Phone" />
+                <p id="phone-error"></p>
+              </div>
             </div>
             <div class="row">
-              <textarea placeholder="Note"></textarea>
+              <div class="row-container">
+                <textarea id="note" placeholder="Note"></textarea>
+                <p id="note-error"></p>
+              </div>
             </div>
             <div class="send">
-              <button class="button">Send</button>
+              <button id="button" class="button">Send</button>
             </div>
           </form>
         </div>

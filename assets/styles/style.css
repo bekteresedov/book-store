@@ -66,7 +66,7 @@ main .catalog .catalog-container .catalog-items {
   justify-content: space-between;
   flex-wrap: wrap;
   row-gap: 20px;
-  /* column-gap: 10px; */
+  column-gap: 10px;
 }
 main .catalog .catalog-container .catalog-items .catalog-item {
   font-family: Montserrat;

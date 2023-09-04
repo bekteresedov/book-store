@@ -18,13 +18,22 @@
   display: flex;
   justify-content: space-between;
   gap: 25px;
-  margin-top: 25px;
+  margin-top: 15px;
 }
 .contact .contact-container form input {
-  width: 100%;
+  width: 90%;
   border: 1px solid #cecece;
 }
-
+.contact .contact-container form .row .row-container {
+  width: 100%;
+}
+.contact .contact-container form .row .row-container p {
+  color: red;
+  font-size: 12px;
+  margin-top: 2px;
+  margin-left: 2px;
+  font-weight: 100;
+}
 .contact .contact-container h2 {
   font-family: Montserrat;
   font-size: 25px;
@@ -51,4 +60,11 @@
   margin-top: 50px;
 }
 
+.error-container {
+  display: flex;
+  gap: 41.3%;
+}
+.error-container p {
+  color: red;
+}
 /* //media query */
