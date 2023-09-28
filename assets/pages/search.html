@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search</title>
+    <link rel="stylesheet" href="../styles/search.css" />
+    <script defer src="../js/hamburgerMenu.js"></script>
+    <script defer type="module" src="../js/join.js"></script>
+    <script src="../js/search.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <!-- //header-left -->
+        <div class="header-left">
+          <img
+            class="header-logo"
+            src="../logo/book-logo.svg"
+            alt="book-logo"
+          />
+        </div>
+        <!-- //header-medium -->
+        <div class="header-medium">
+          <nav class="header-nav">
+            <ul class="nav-list">
+              <li class="list-item">
+                <a class="item-link" href="../../index.html">Home</a>
+              </li>
+              <li class="list-item">
+                <a class="item-link" href="./catalog.html">Catalog</a>
+              </li>
+              <li class="list-item">
+                <a class="item-link" href="#">About Service</a>
+              </li>
+              <li class="list-item">
+                <a class="item-link" href="./contact.html">Contact Us</a>
+              </li>
+              <li class="list-item">
+                <a class="item-link" href="./search.html">Search</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!-- //header-right -->
+        <div class="header-right">
+          <img class="header-icon" src="../icon/join.svg" alt="join" />
+          <h4 class="header-join">Join</h4>
+          <img
+            src="../icon/hambugerMenu.svg"
+            alt="hambugerMenu"
+            class="hamburger"
+          />
+        </div>
+      </div>
+      <!-- //absolute -->
+      <div class="absolute">
+        <img src="../icon/cancel.svg" alt="cancel" class="cancel" />
+      </div>
+      <!-- //join -->
+      <div class="dark">
+        <div class="join">
+          <img class="canc" src="../icon/canc.png" alt="cancel" />
+          <h2>Join Us</h2>
+          <form>
+            <input
+              id="fName"
+              type="text"
+              placeholder="Full name"
+              class="input"
+            />
+            <p id="fName-error"></p>
+            <input id="emaiL" type="email" placeholder="Email" class="input" />
+            <p id="emaiL-error"></p>
+
+            <button class="joinBtn">Join</button>
+          </form>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- //search -->
+      <div class="search">
+        <div class="search-container">
+          <div class="left">
+            <h2>Search</h2>
+            <input class="input" id="heyva" type="text" />
+            <button class="button">Search</button>
+          </div>
+          <div class="right">
+            <img src="../icon/back.svg" alt="back" class="back" />
+            <div class="book-container"></div>
+            <img src="../icon/next.svg" alt="next" class="next" />
+          </div>
+        </div>
+      </div>
+      <!-- //social-media -->
+      <section class="social-media">
+        <h2>Follow us on social media</h2>
+        <div class="social-media-container">
+          <img src="../icon/facebook.svg" alt="facebook" />
+          <img src="../icon/twitter.svg" alt="twitter" />
+          <img src="../icon/instagram.svg" alt="instagram" />
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- //footer-left -->
+        <div class="footer-left">
+          <img
+            class="footer-logo"
+            src="../logo/footer-book-logo.svg"
+            alt="book-logo"
+          />
+        </div>
+        <!-- //footer-right -->
+
+        <div class="footer-right">
+          <div class="list-container">
+            <!-- //list-left -->
+            <div class="list-left">
+              <h3>Popular</h3>
+              <ul>
+                <li>Programming</li>
+                <li>Books for children</li>
+                <li>Psychology</li>
+                <li>Business</li>
+              </ul>
+            </div>
+            <!-- //list-medium -->
+            <div class="list-medium">
+              <h3>Cash</h3>
+              <ul>
+                <li>Delivery</li>
+                <li>Payment</li>
+                <li>About the store</li>
+              </ul>
+            </div>
+            <!-- //list-right -->
+            <div class="list-right">
+              <h3>Help</h3>
+              <ul>
+                <li>Contacts</li>
+                <li>Purechase returns</li>
+                <li>Buyer help</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //footer end -->
+      <p class="footer-end">
+        All rights reserved © 2003-2021 LIBRARY TERMS OF USE | Privacy Policy
+      </p>
+    </footer>
+    <script></script>
+  </body>
+</html>

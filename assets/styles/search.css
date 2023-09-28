@@ -1,0 +1,91 @@
+@import url("../styles/reset.css");
+@import url("../components/header.css");
+@import url("../components/footer.css");
+@import url("../components/social-media.css");
+@import url("../components/button.css");
+@import url("../fonts/index.css");
+
+main .search {
+  margin-top: 60px;
+}
+main .search .search-container {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+/* //left */
+main .search .search-container .left {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+}
+
+main .search .search-container .left .input {
+  width: 233px;
+}
+main .search .search-container .left h2 {
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0em;
+  text-align: left;
+}
+main .search .search-container .button {
+  text-align: center;
+  padding-left: 0;
+  width: 100%;
+}
+
+main .search .search-container {
+  display: flex;
+  column-gap: 50px;
+}
+
+/* /right */
+main .search .search-container .right .book-container {
+  margin-top: 50px;
+  display: flex;
+  padding: 18px;
+  padding-bottom: 50px;
+  padding-top: 30px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  gap: 25px;
+  border-radius: 3px;
+}
+main .search .search-container .right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+main .search .search-container .right .next,
+main .search .search-container .right .back {
+  width: 35x;
+  height: 35px;
+  cursor: pointer;
+}
+main .search .search-container .right .img {
+  width: 180px;
+  height: 251px;
+}
+main .search .search-container .right .book-container h2 {
+  color: #241400;
+  font-weight: 700;
+  font-size: 22px;
+  font-family: Montserrat;
+}
+
+main .search .search-container .right .book-container h3,
+main .search .search-container .right .book-container p {
+  color: #241400;
+  font-weight: 400;
+  font-family: Montserrat;
+  font-size: 12px;
+}
+main .search .search-container .right .book-container h3 {
+  margin: 8px 0;
+  font-size: 14px;
+}
+main .search .search-container .right .book-container p {
+  line-height: 18.31px;
+}
