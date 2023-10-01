@@ -39,6 +39,7 @@ main .search .search-container .button {
 
 main .search .search-container {
   display: flex;
+  /* justify-content: center; */
   column-gap: 50px;
 }
 
@@ -88,4 +89,38 @@ main .search .search-container .right .book-container h3 {
 }
 main .search .search-container .right .book-container p {
   line-height: 18.31px;
+}
+
+.error {
+  display: none;
+  font-size: 30px;
+  color: red;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  margin-top: 60px;
+}
+
+@media screen and (max-width: 742px) {
+  main .search .search-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main .search .search-container .right .img {
+    width: 100px;
+    height: 151px;
+  }
+  main .search .search-container .right .book-container h2 {
+    font-size: 15px;
+  }
+  main .search .search-container .right .book-container p {
+    font-size: 10px;
+  }
+  main .search .search-container .right .book-container h3 {
+    font-size: 12px;
+  }
+
+  .error {
+    font-size: 20px;
+  }
 }

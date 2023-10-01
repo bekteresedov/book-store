@@ -48,20 +48,30 @@ const next = document.querySelector(".next");
 const back = document.querySelector(".back");
 const right = document.querySelector(".search-container .right");
 const button = document.querySelector(".button");
+const error = document.querySelector(".error");
 
 button.addEventListener("click", () => {
   const input = document.getElementById("heyva");
-  let inputValue = input.value.toUpperCase();
+  let inputValue = input.value.trim().toUpperCase();
+  if (!inputValue) {
+    return;
+  }
   input.value = "";
   data = bookList.filter((book) =>
     book.content.bookName.toLocaleUpperCase().includes(inputValue)
   );
-  if (data.length) {
+  if (!data.length) {
+    right.style.display = "none";
+    error.style.display = "flex";
+    right.appendChild(h2);
+  } else if (data.length) {
+    error.style.display = "none";
+
     bookContainer.innerHTML = "";
     right.style.display = "flex";
     let bookCount = 0;
     let e = data[bookCount];
-    getDataView(e);
+    main(e);
     next.addEventListener("click", () => {
       if (bookCount == data.length - 1) {
         bookContainer.innerHTML = "";
